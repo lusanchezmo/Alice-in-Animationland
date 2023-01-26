@@ -21,7 +21,7 @@ body{
     z-index: 1;
     height: 450px;
     width: 80px;
-    background: white;
+    background: rgb(250, 197, 197, 0);
     bottom: 0;
     right: 60px;
 }
@@ -31,7 +31,7 @@ body{
     z-index: 2;
     height: 450px;
     width: 80px;
-    background: white;
+    background: rgb(248, 247, 167);
     bottom: 0;
     left: 60px;
 }
@@ -45,7 +45,8 @@ body{
     margin: 0 auto;
     width: 220px;
     height: 400px;
-    background: wheat;
+    background: #bf624c;
+    border-radius: 20px 20px 0 0;
 }
 
 .layer-4{
@@ -55,7 +56,7 @@ body{
     left: 20px;
     width: 80px;
     height: 350px;
-    background-color: white;
+    background-color: rgb(154, 216, 252, 0);
 }
 
 .layer-5{
@@ -73,7 +74,7 @@ body{
     z-index: 6;
     bottom: 0;
     right: 30px;
-    background: white;
+    background: rgb(253, 212, 212);
     width: 80px;
     height: 250px;
 }
@@ -86,6 +87,7 @@ body{
     background: whitesmoke;
     height: 200px;
     width: 150px;
+
 }
 
 .layer-8{
@@ -118,4 +120,113 @@ body{
     background: rgb(241, 194, 194);
     height: 100px;
     width: 120px;
+}
+
+.left-ear--outer{
+    background-color: white;
+    border-radius: 90%;
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    margin-left: 10px;
+}
+
+.left-ear--inner{
+    background: pink;
+    border-radius: 90%;
+    width: 10px;
+    height: 50px;
+    position: absolute;
+    margin-left: 15px;
+    top: 8px;
+}
+
+.right-ear--outer{
+    background-color: white;
+    border-radius: 90%;
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    right: 10px;
+}
+
+.right-ear--inner{
+    background: pink;
+    border-radius: 90%;
+    width: 10px;
+    height: 50px;
+    position: absolute;
+    right: 15px;
+    top: 8px;
+}
+
+.head {
+    background-color: white;
+    border-radius: 50%;
+    height: 80px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+}
+
+.head__eye{
+    background-color: black;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    top: 15px;
+
+    animation: blink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes blink {
+    0% {
+        height: 4px;
+    }
+    5% {
+        transform: translate(0px, 2px);
+        height: 1px;
+    }
+    10% {
+        transform: translate(0px, 2px);
+        height: 4px;
+    }
+}
+
+.head__eye--left{
+    left: 30px;
+}
+
+.head__eye--right{
+    right: 30px;
+}
+
+
+.grass {
+    background: green;
+      height: 20px;
+      width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.zigzag {
+    background: linear-gradient(
+    135deg
+    , green 25%, transparent 25%) -50px 0, linear-gradient(
+    -135deg
+    , green 25%, transparent 25%) -50px 0, linear-gradient(
+    45deg
+    , #bf624c 25%, transparent 25%), linear-gradient(
+    -45deg
+    , transparent 25%, #a54a38 25%);
+    background-size: 33px 30px;
+    height: 30px;
+    width: 100%;
 }
