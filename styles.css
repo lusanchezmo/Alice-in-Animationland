@@ -31,7 +31,7 @@ body{
     z-index: 2;
     height: 450px;
     width: 80px;
-    background: rgb(248, 247, 167);
+    background: rgb(248, 247, 167, 0);
     bottom: 0;
     left: 60px;
 }
@@ -47,6 +47,8 @@ body{
     height: 400px;
     background: #bf624c;
     border-radius: 20px 20px 0 0;
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+    0.3em 0.5em 1em rgba(0,0,0,0.3);
 }
 
 .layer-4{
@@ -60,13 +62,17 @@ body{
 }
 
 .layer-5{
+    margin: 0 auto;
+    background: #bf624c;
+    border-radius: 20px 20px 30px 30px;
     position: absolute;
     z-index: 5;
     bottom: 0;
     left: 0;
     width: 200px;
     height: 300px;
-    background: rgb(247, 230, 198);
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+    0.3em 0.3em 3em rgba(0,0,0,0.3);
 }
 
 .layer-6{
@@ -74,20 +80,23 @@ body{
     z-index: 6;
     bottom: 0;
     right: 30px;
-    background: rgb(253, 212, 212);
+    background: rgb(253, 212, 212, 0);
     width: 80px;
     height: 250px;
 }
 
 .layer-7{
+    margin: 0 auto;
+    background: #bf624c;
+    border-radius: 20px 20px 30px 30px;
     position: absolute;
     z-index: 7;
     bottom: 0;
     right: 0;
-    background: whitesmoke;
     height: 200px;
     width: 150px;
-
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+    0.3em 0.3em 3em rgba(0,0,0,0.3);
 }
 
 .layer-8{
@@ -99,25 +108,121 @@ body{
     margin: 0 auto;
     width: 200px;
     height: 150px;
-    background: rgb(218, 210, 197);
+    background: rgb(218, 210, 197, 0);
 }
+
+.rectangle {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    background-color: green;
+    bottom: 0;
+}
+
+.bol1 {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: green;
+    bottom: 0;
+}
+
+.bol2 {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: green;
+    left: 50px;
+    bottom: 50px;
+}
+
+.bol3 {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: green;
+    right: 0;
+    bottom: 0;
+}
+
 
 .layer-9{
     position: absolute;
     z-index: 9;
     bottom: 0;
     left: 0;
-    background: rgb(245, 214, 214);
+    background: rgb(245, 214, 214, 0);
     height: 100px;
     width: 120px;
 }
+
+.cir1 {
+    position: absolute;
+    height: 100%;
+    width: 80px;
+    background-color: white;
+    border-radius: 80%;
+}
+
+.cir2 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 30px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+}
+
+.cir3 {
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    left: 20px;
+    bottom: 0;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.cir4 {
+    position: absolute;
+    height: 100%;
+    width: 80px;
+    background-color: white;
+    border-radius: 80%;
+    right: 0;
+}
+
+.cir5 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 30px;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+}
+
+.cir6 {
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    right: 20px;
+    bottom: 0;
+    background-color: white;
+    border-radius: 30px;
+}
+
 
 .layer-10{
     position: absolute;
     z-index: 10;
     bottom: 0;
     right: 0;
-    background: rgb(241, 194, 194);
+    background: rgb(241, 194, 194, 0);
     height: 100px;
     width: 120px;
 }
