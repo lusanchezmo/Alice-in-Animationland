@@ -24,6 +24,32 @@ body{
     background: rgb(250, 197, 197, 0);
     bottom: 0;
     right: 60px;
+
+    animation-name: layer;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes layer {
+    0% {
+        bottom: 0;
+    }
+    25% {
+        bottom: -80px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+.layer-1 input[type=checkbox] {
+    position: absolute;
+    appearance: none;
+    cursor: pointer;
+    z-index: 1;
+    width: 100%;
+    height: 80px;
 }
 
 .layer-2{
@@ -34,6 +60,35 @@ body{
     background: rgb(248, 247, 167, 0);
     bottom: 0;
     left: 60px;
+
+    animation-name: layer2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes layer2 {
+    0% {
+        bottom: 0;
+    }
+    25% {
+        bottom: -80px;
+    }
+    70%{
+        bottom: -30px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+.layer-2 input[type=checkbox] {
+    position: absolute;
+    appearance: none;
+    cursor: pointer;
+    z-index: 1;
+    width: 100%;
+    height: 80px;
 }
 
 .layer-3{
@@ -59,6 +114,32 @@ body{
     width: 80px;
     height: 350px;
     background-color: rgb(154, 216, 252, 0);
+
+    animation-name: layer3;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes layer3 {
+    0% {
+        bottom: 0;
+    }
+    25% {
+        bottom: -80px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+.layer-4 input[type=checkbox] {
+    position: absolute;
+    appearance: none;
+    cursor: pointer;
+    z-index: 1;
+    width: 100%;
+    height: 80px;
 }
 
 .layer-5{
@@ -83,6 +164,32 @@ body{
     background: rgb(253, 212, 212, 0);
     width: 80px;
     height: 250px;
+
+    animation-name: layer4;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes layer4 {
+    0% {
+        bottom: 0;
+    }
+    25% {
+        bottom: -80px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+.layer-6 input[type=checkbox] {
+    position: absolute;
+    appearance: none;
+    cursor: pointer;
+    z-index: 1;
+    width: 100%;
+    height: 80px;
 }
 
 .layer-7{
